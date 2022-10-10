@@ -1,7 +1,8 @@
 import {
-  h as rawH,
   isVue3,
+  version,
 } from "vue-demi";
+import { h as rawH } from 'vue';
 
 type Vue2Data = Record<string, any>;
 
