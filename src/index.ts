@@ -17,7 +17,9 @@ export const toHead = (...args: ToMetaTagsType[]) => {
 
   const titleTag = tags && tags.find((t) => t.tag === "title");
   const metaTags = tags ? tags.filter((t) => t.tag === "meta") : [];
-  const linkTags = tags ? tags.filter((t) => t.tag === "link") : [];
+  const linkTags = tags ? tags.filter((t) => t.tag === "link") : [];***
+
+  console.log('bite');
 
   return {
     title: titleTag && titleTag.content,
